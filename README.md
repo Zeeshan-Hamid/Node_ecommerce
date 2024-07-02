@@ -1,4 +1,5 @@
 The website is currently under development
+The project is BASED on MVC modal so please access those folders to view source code
 Please use app.js to initialize the projects. 
 
 Current versions of packages installed are below
