@@ -1,4 +1,4 @@
-<div class="backdrop"></div>
+<!-- <div class="backdrop"></div>
 <header class="main-header">
     <button id="side-menu-toggle">Menu</button>
     <nav class="main-header__nav">
@@ -50,4 +50,31 @@
                     </a>
                 </li>
             </ul>
-</nav>
+</nav> -->
+
+
+<nav class="navbar">
+        <div class="navbar-brand">
+            <a href="/">You Commerce<span class="dot">.</span></a>
+        </div>
+        <div class="navbar-menu">
+            <ul>
+                <li><a class="<%= path === '/' ? 'active' : '' %>" href="/">Shop</a></li>
+                <li><a class="<%= path === '/products' ? 'active' : '' %>" href="/products">Products</a></li>
+                <li><a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">Order</a></li>
+                <li><a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Add Products</a></li>
+                <li><a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Admin Products</a></li>
+            </ul>
+        </div>
+        <div class="navbar-icons">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart"><i class="fas fa-shopping-bag"></i> $0.00</a>
+        </div>
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+    <div class="navbar-backdrop" onclick="toggleMenu()"></div>
