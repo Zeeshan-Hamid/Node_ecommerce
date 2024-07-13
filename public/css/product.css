@@ -25,11 +25,3 @@
 .product__description {
     text-align: center;
 }
-
-
-.quantity{
-  width: 75px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
